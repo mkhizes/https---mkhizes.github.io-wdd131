@@ -1,54 +1,100 @@
 * {
-	margin: 0;
-	padding: 0;
+
+
 	box-sizing: border-box;
 }
 
-body {
+* body {
 	font-family: "Sansita", sans-serif;
 }
 
 /* mobile **************************/
 header {
-	background-color: #bbb;
-	display: flex;
+	background-color: rgba(19, 19, 92, 0.913);
+	display: grid;
+	grid-row: 1/2;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+	gap: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 header,
 main {
 	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 2/6;
+	grid-template-columns: 1/4;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
+	text-align: center;
+	padding-top: auto;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+	padding: auto;
+	margin-top: auto;
+	background-color: rgba(1, 1, 23, 0.77);
+	;
 }
 
 nav {
 	background-color: #36454f;
 	margin: 0 auto;
 	max-width: 800px;
+	padding: 2rem;
+	font-size: 1rem;
+	grid-column: 1/5;
+
 }
+
 nav ul {
 	list-style-type: none;
 }
+
 nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
-	padding: 1rem;
+
 	text-decoration: none;
 }
 
 nav a:hover {
-	text-decoration:overline;
+	text-decoration: overline;
 }
 
 .active {
 	color: yellow;
+}
+
+.card {
+	border-radius: 1rem;
+	padding: auto;
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+
+p {
+	text-align: center;
+	background-color: rgba(1, 1, 23, 0.77);
+}
+
+footer {
+	grid-row: 5/6;
+	grid-column: 1/5;
+}
+
+#section {
+	border-radius: 1rem;
+	padding: auto;
+	grid-row: auto;
+	grid-column: 3/4;
 }
 
 /* Larger Views ******************************/
@@ -56,6 +102,7 @@ nav a:hover {
 	nav ul {
 		display: flex;
 	}
+
 	nav ul li {
 		flex: 1 1 100%;
 	}
