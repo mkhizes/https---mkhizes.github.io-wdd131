@@ -101,13 +101,12 @@ footer {
 	gap: 20px;
 }
 
-.picture{
-	position:fixed;
+#picture{
+	position:absolute;
 	right:0px;
 	
-	
 }
-.flag{
+#flag{
 	position:relative;
 	left:0px;
 	}
