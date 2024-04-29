@@ -101,16 +101,16 @@ footer {
 	gap: 20px;
 }
 
-#picture{
-	position:absolute;
-	right:0px;
-	
-}
-#flag{
+.picture{
 	position:relative;
-	left:0px;
+	left:0px 0px 20px;
+}
+
+#flag{
+	position:absolute;
+	right:0px 0px 20px;
 	}
-	
+
 /* Larger Views ******************************/
 @media (min-width: 640px) {
 	nav ul {
