@@ -103,12 +103,13 @@ footer {
 
 .picture{
 	position:relative;
-	left:0px 0px 20px;
+	top:150px;
+	left:150px;
 }
 
 #flag{
 	position:absolute;
-	right:0px 0px 20px;
+	right:150px;
 	}
 
 /* Larger Views ******************************/
